@@ -1,5 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faJs } from "@fortawesome/free-brands-svg-icons";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 import Section from "@/components/Section";
 import DownloadButton from "@/components/DownloadButton";
+import Projects from "@/components/Projects";
 
 const Home: React.FC = () => {
   return (
@@ -18,7 +22,53 @@ const Home: React.FC = () => {
           </div>
         </Section>
         <Section id="Projects" title="Projects">
-          <p>Contenido de proyectos...</p>
+          <div className="projects">
+            <Projects
+              img={"/remix-app.jpeg"}
+              title={"Remix Users App"}
+              projectUrl={
+                "https://salty-lowlands-25269-53ed27647c88.herokuapp.com"
+              }
+              githubUrl={"https://github.com/dianabasilio/remix"}
+              technologies={[
+                {
+                  icon: "typescript.png",
+                  name: "Typescript",
+                },
+                {
+                  icon: "remix.png",
+                  name: "Remix",
+                },
+                {
+                  icon: "reactjs.png",
+                  name: "React",
+                },
+                {
+                  icon: "js.png",
+                  name: "JavaScript",
+                },
+              ]}
+            ></Projects>
+
+            <Projects
+              img={"/samandro.jpeg"}
+              title={"Itinerary Next js app"}
+              projectUrl={"https://itinerary-app-9886f0dc26be.herokuapp.com"}
+              githubUrl={
+                "https://github.com/dianabasilio/sam-villareal-itinerary"
+              }
+              technologies={[
+                {
+                  icon: "js.png",
+                  name: "JavaScript",
+                },
+                {
+                  icon: "reactjs.png",
+                  name: "React",
+                },
+              ]}
+            ></Projects>
+          </div>
         </Section>
         <Section id="Tech-stack" title="Tech Stack">
           <p>Contenido de tech stack...</p>

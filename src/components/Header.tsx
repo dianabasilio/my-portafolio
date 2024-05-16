@@ -11,7 +11,7 @@ const Header: React.FC = () => {
 
       sections.forEach((section) => {
         const element = document.getElementById(section);
-        if (element && window.scrollY >= element.offsetTop - 70) {
+        if (element && window.scrollY >= element.offsetTop - 100) {
           currentSection = section;
         }
       });
