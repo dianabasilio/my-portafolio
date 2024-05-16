@@ -11,7 +11,7 @@ const Header: React.FC = () => {
 
       sections.forEach((section) => {
         const element = document.getElementById(section);
-        if (element && window.scrollY >= element.offsetTop - 100) {
+        if (element && window.scrollY >= element.offsetTop - 70) {
           currentSection = section;
         }
       });
@@ -31,9 +31,7 @@ const Header: React.FC = () => {
         {["About-me", "Projects", "Tech-stack", "Contact-me"].map((section) => (
           <div
             key={section}
-            className={`${styles.li} ${
-              activeSection === section ? styles.active : ""
-            }`}
+            className={`${activeSection === section ? styles.active : ""}`}
           >
             <a href={`#${section}`} className={styles.a}>
               {section.split("-").join(" ")}
