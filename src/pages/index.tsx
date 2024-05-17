@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     <div className="projects">
       <Projects
         img={"/remix-app.jpeg"}
-        title={"Remix Users App"}
+        title={"Remix Contacts App"}
         projectUrl={"https://salty-lowlands-25269-53ed27647c88.herokuapp.com"}
         githubUrl={"https://github.com/dianabasilio/remix"}
         technologies={[
