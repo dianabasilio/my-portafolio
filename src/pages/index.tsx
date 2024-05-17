@@ -22,7 +22,7 @@ const Home: React.FC = () => {
           },
           {
             icon: "reactjs.png",
-            name: "React",
+            name: "React js",
           },
           {
             icon: "js.png",
@@ -109,13 +109,15 @@ const Home: React.FC = () => {
         </Section>
         <Section id="Tech-stack" title="Tech Stack">
           <div className="tech-stack-container">
-            <Tech img={"reactjs.png"} name="React Js" />
+            <Tech img={"reactjs.png"} name="React js" />
             <Tech img={"js.png"} name="Javascript" />
             <Tech img={"typescript.png"} name="Typescript" />
-            <Tech img={"express.png"} name="Express Js" />
+            <Tech img={"express.png"} name="Express js" />
+            <Tech img={"next.svg"} name="Next js" />
             <Tech img={"remix.png"} name="Remix" />
             <Tech img={"python.png"} name="Python" />
             <Tech img={"mysql.png"} name="MySql" />
+            <Tech img={"css.png"} name="CSS" />
             <Tech img={"aws.png"} name="Amazon Web Services" />
             <Tech img={"postgresql.png"} name="Postgresql" />
             <Tech img={"redux.svg"} name="Redux" />
