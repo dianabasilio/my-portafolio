@@ -32,7 +32,7 @@ const Home: React.FC = () => {
       />
       <Projects
         img={"/samandro.jpeg"}
-        title={"Itinerary Next js app"}
+        title={"Itinerary Next js App"}
         projectUrl={"https://itinerary-app-9886f0dc26be.herokuapp.com"}
         githubUrl={"https://github.com/dianabasilio/sam-villareal-itinerary"}
         technologies={[
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
       />
       <Projects
         img={"/jewelry.jpeg"}
-        title={"E-commerce Jewelry express app"}
+        title={"E-commerce Jewelry Express App"}
         githubUrl={"https://github.com/dianabasilio/grupo_3_Bijoux"}
         technologies={[
           {
@@ -71,7 +71,7 @@ const Home: React.FC = () => {
       />
       <Projects
         img={"/face.png"}
-        title={"Face recognition python"}
+        title={"Face Recognition Python"}
         githubUrl={
           "https://github.com/dianabasilio/face_recognition_raspberry_pi"
         }
