@@ -13,8 +13,8 @@ interface ProjectsProps {
   img: string;
   title: string;
   technologies: Technology[];
-  projectUrl: string;
   githubUrl: string;
+  projectUrl?: string;
   children?: React.ReactNode;
 }
 
@@ -46,9 +46,11 @@ const Projects: React.FC<ProjectsProps> = ({
         <Link href={githubUrl} className={styles.secondary}>
           <FontAwesomeIcon icon={faGithub} />
         </Link>
-        <Link href={projectUrl} className={styles.primary}>
-          View Live
-        </Link>
+        {projectUrl && (
+          <Link href={projectUrl} className={styles.primary}>
+            View Live
+          </Link>
+        )}
       </div>
 
       {children}

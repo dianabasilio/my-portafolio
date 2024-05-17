@@ -49,7 +49,6 @@ const Home: React.FC = () => {
                 },
               ]}
             ></Projects>
-
             <Projects
               img={"/samandro.jpeg"}
               title={"Itinerary Next js app"}
@@ -59,12 +58,52 @@ const Home: React.FC = () => {
               }
               technologies={[
                 {
+                  icon: "nextjs.png",
+                  name: "Next js",
+                },
+                {
+                  icon: "typescript.png",
+                  name: "Typescript",
+                },
+                {
+                  icon: "reactjs.png",
+                  name: "React js",
+                },
+              ]}
+            ></Projects>
+            <Projects
+              img={"/jewelry.jpeg"}
+              title={"E-coomerce Jewerly express app"}
+              githubUrl={"https://github.com/dianabasilio/grupo_3_Bijoux"}
+              technologies={[
+                {
+                  icon: "express.png",
+                  name: "Express js",
+                },
+                {
                   icon: "js.png",
                   name: "JavaScript",
                 },
                 {
-                  icon: "reactjs.png",
-                  name: "React",
+                  icon: "mysql.png",
+                  name: "MySql",
+                },
+              ]}
+            ></Projects>
+            <Projects
+              img={"/face.png"}
+              title={"Face recognition python"}
+              githubUrl={
+                "https://github.com/dianabasilio/face_recognition_raspberry_pi"
+              }
+              technologies={[
+                {
+                  icon: "python.png",
+                  name: "Python",
+                },
+                {
+                  icon: "raspberry.png",
+                  name: "Raspberry pi",
                 },
               ]}
             ></Projects>
