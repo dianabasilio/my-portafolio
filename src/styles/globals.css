@@ -98,6 +98,13 @@ button a {
   align-items: center;
 }
 
+.tech-stack-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 @media (min-width: 768px) {
   .projects {
     flex-direction: row;

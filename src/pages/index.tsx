@@ -1,11 +1,94 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJs } from "@fortawesome/free-brands-svg-icons";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
 import Section from "@/components/Section";
 import DownloadButton from "@/components/DownloadButton";
 import Projects from "@/components/Projects";
+import Tech from "@/components/Tech";
 
 const Home: React.FC = () => {
+  const projectsContent = (
+    <div className="projects">
+      <Projects
+        img={"/remix-app.jpeg"}
+        title={"Remix Users App"}
+        projectUrl={"https://salty-lowlands-25269-53ed27647c88.herokuapp.com"}
+        githubUrl={"https://github.com/dianabasilio/remix"}
+        technologies={[
+          {
+            icon: "typescript.png",
+            name: "Typescript",
+          },
+          {
+            icon: "remix.png",
+            name: "Remix",
+          },
+          {
+            icon: "reactjs.png",
+            name: "React",
+          },
+          {
+            icon: "js.png",
+            name: "JavaScript",
+          },
+        ]}
+      />
+      <Projects
+        img={"/samandro.jpeg"}
+        title={"Itinerary Next js app"}
+        projectUrl={"https://itinerary-app-9886f0dc26be.herokuapp.com"}
+        githubUrl={"https://github.com/dianabasilio/sam-villareal-itinerary"}
+        technologies={[
+          {
+            icon: "nextjs.png",
+            name: "Next js",
+          },
+          {
+            icon: "typescript.png",
+            name: "Typescript",
+          },
+          {
+            icon: "reactjs.png",
+            name: "React js",
+          },
+        ]}
+      />
+      <Projects
+        img={"/jewelry.jpeg"}
+        title={"E-commerce Jewelry express app"}
+        githubUrl={"https://github.com/dianabasilio/grupo_3_Bijoux"}
+        technologies={[
+          {
+            icon: "express.png",
+            name: "Express js",
+          },
+          {
+            icon: "js.png",
+            name: "JavaScript",
+          },
+          {
+            icon: "mysql.png",
+            name: "MySql",
+          },
+        ]}
+      />
+      <Projects
+        img={"/face.png"}
+        title={"Face recognition python"}
+        githubUrl={
+          "https://github.com/dianabasilio/face_recognition_raspberry_pi"
+        }
+        technologies={[
+          {
+            icon: "python.png",
+            name: "Python",
+          },
+          {
+            icon: "raspberry.png",
+            name: "Raspberry pi",
+          },
+        ]}
+      />
+    </div>
+  );
+
   return (
     <>
       <main>
@@ -22,95 +105,25 @@ const Home: React.FC = () => {
           </div>
         </Section>
         <Section id="Projects" title="Projects">
-          <div className="projects">
-            <Projects
-              img={"/remix-app.jpeg"}
-              title={"Remix Users App"}
-              projectUrl={
-                "https://salty-lowlands-25269-53ed27647c88.herokuapp.com"
-              }
-              githubUrl={"https://github.com/dianabasilio/remix"}
-              technologies={[
-                {
-                  icon: "typescript.png",
-                  name: "Typescript",
-                },
-                {
-                  icon: "remix.png",
-                  name: "Remix",
-                },
-                {
-                  icon: "reactjs.png",
-                  name: "React",
-                },
-                {
-                  icon: "js.png",
-                  name: "JavaScript",
-                },
-              ]}
-            ></Projects>
-            <Projects
-              img={"/samandro.jpeg"}
-              title={"Itinerary Next js app"}
-              projectUrl={"https://itinerary-app-9886f0dc26be.herokuapp.com"}
-              githubUrl={
-                "https://github.com/dianabasilio/sam-villareal-itinerary"
-              }
-              technologies={[
-                {
-                  icon: "nextjs.png",
-                  name: "Next js",
-                },
-                {
-                  icon: "typescript.png",
-                  name: "Typescript",
-                },
-                {
-                  icon: "reactjs.png",
-                  name: "React js",
-                },
-              ]}
-            ></Projects>
-            <Projects
-              img={"/jewelry.jpeg"}
-              title={"E-coomerce Jewerly express app"}
-              githubUrl={"https://github.com/dianabasilio/grupo_3_Bijoux"}
-              technologies={[
-                {
-                  icon: "express.png",
-                  name: "Express js",
-                },
-                {
-                  icon: "js.png",
-                  name: "JavaScript",
-                },
-                {
-                  icon: "mysql.png",
-                  name: "MySql",
-                },
-              ]}
-            ></Projects>
-            <Projects
-              img={"/face.png"}
-              title={"Face recognition python"}
-              githubUrl={
-                "https://github.com/dianabasilio/face_recognition_raspberry_pi"
-              }
-              technologies={[
-                {
-                  icon: "python.png",
-                  name: "Python",
-                },
-                {
-                  icon: "raspberry.png",
-                  name: "Raspberry pi",
-                },
-              ]}
-            ></Projects>
-          </div>
+          {projectsContent}
         </Section>
         <Section id="Tech-stack" title="Tech Stack">
-          <p>Contenido de tech stack...</p>
+          <div className="tech-stack-container">
+            <Tech img={"reactjs.png"} name="React Js" />
+            <Tech img={"js.png"} name="Javascript" />
+            <Tech img={"typescript.png"} name="Typescript" />
+            <Tech img={"express.png"} name="Express Js" />
+            <Tech img={"remix.png"} name="Remix" />
+            <Tech img={"python.png"} name="Python" />
+            <Tech img={"mysql.png"} name="MySql" />
+            <Tech img={"aws.png"} name="Amazon Web Services" />
+            <Tech img={"postgresql.png"} name="Postgresql" />
+            <Tech img={"redux.svg"} name="Redux" />
+            <Tech img={"react-testing.png"} name="React Testing Library" />
+            <Tech img={"gcp.png"} name="Google Cloud Plataform" />
+            <Tech img={"ruby.png"} name="Ruby on Rails" />
+            <Tech img={"php.png"} name="PHP" />
+          </div>
         </Section>
         <Section id="Contact-me" title="Contact Me">
           <p>Contenido de contacto...</p>
