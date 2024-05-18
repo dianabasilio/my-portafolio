@@ -89,49 +89,51 @@ const Home: React.FC = () => {
     </div>
   );
 
+  const techStackContent = (
+    <div className="tech-stack-container">
+      <Tech img={"reactjs.png"} name="React js" />
+      <Tech img={"js.png"} name="Javascript" />
+      <Tech img={"typescript.png"} name="Typescript" />
+      <Tech img={"express.png"} name="Express js" />
+      <Tech img={"next.svg"} name="Next js" />
+      <Tech img={"remix.png"} name="Remix" />
+      <Tech img={"python.png"} name="Python" />
+      <Tech img={"mysql.png"} name="MySql" />
+      <Tech img={"css.png"} name="CSS" />
+      <Tech img={"aws.png"} name="Amazon Web Services" />
+      <Tech img={"postgresql.png"} name="Postgresql" />
+      <Tech img={"redux.svg"} name="Redux" />
+      <Tech img={"react-testing.png"} name="React Testing Library" />
+      <Tech img={"gcp.png"} name="Google Cloud Plataform" />
+      <Tech img={"ruby.png"} name="Ruby on Rails" />
+      <Tech img={"php.png"} name="PHP" />
+    </div>
+  );
+
   return (
-    <>
-      <main>
-        <Section id="About-me" title="">
-          <div className="about-me">
-            <img src="/computer.png" alt="computer" />
-            <div className="about-me-content">
-              <h2>Hi, my name is Diana Basilio, I am a Full Stack Developer</h2>
-              <p> Let me help you with your project</p>
-              <DownloadButton fileName="DianaBasilioCV.pdf">
-                Download Resume
-              </DownloadButton>
-            </div>
+    <main>
+      <Section id="About-me" title="">
+        <div className="about-me">
+          <img src="/computer.png" alt="computer" />
+          <div className="about-me-content">
+            <h2>Hi, my name is Diana Basilio, I am a Full Stack Developer</h2>
+            <p> Let me help you with your project</p>
+            <DownloadButton fileName="DianaBasilioCV.pdf">
+              Download Resume
+            </DownloadButton>
           </div>
-        </Section>
-        <Section id="Projects" title="Projects">
-          {projectsContent}
-        </Section>
-        <Section id="Tech-stack" title="Tech Stack">
-          <div className="tech-stack-container">
-            <Tech img={"reactjs.png"} name="React js" />
-            <Tech img={"js.png"} name="Javascript" />
-            <Tech img={"typescript.png"} name="Typescript" />
-            <Tech img={"express.png"} name="Express js" />
-            <Tech img={"next.svg"} name="Next js" />
-            <Tech img={"remix.png"} name="Remix" />
-            <Tech img={"python.png"} name="Python" />
-            <Tech img={"mysql.png"} name="MySql" />
-            <Tech img={"css.png"} name="CSS" />
-            <Tech img={"aws.png"} name="Amazon Web Services" />
-            <Tech img={"postgresql.png"} name="Postgresql" />
-            <Tech img={"redux.svg"} name="Redux" />
-            <Tech img={"react-testing.png"} name="React Testing Library" />
-            <Tech img={"gcp.png"} name="Google Cloud Plataform" />
-            <Tech img={"ruby.png"} name="Ruby on Rails" />
-            <Tech img={"php.png"} name="PHP" />
-          </div>
-        </Section>
-        <Section id="Contact-me" title="Contact Me">
-          <p>Contenido de contacto...</p>
-        </Section>
-      </main>
-    </>
+        </div>
+      </Section>
+      <Section id="Projects" title="Projects">
+        {projectsContent}
+      </Section>
+      <Section id="Tech-stack" title="Tech Stack">
+        {techStackContent}
+      </Section>
+      <Section id="Contact-me" title="Contact Me">
+        <p>Contenido de contacto...</p>
+      </Section>
+    </main>
   );
 };
 
