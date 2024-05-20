@@ -118,7 +118,7 @@ button a {
 }
 
 .contact-me-content {
-  height: 50%;
+  height: 200px;
   width: 60%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
