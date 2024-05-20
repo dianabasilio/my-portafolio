@@ -25,8 +25,6 @@ const Button: React.FC<ButtonProps> = ({
   const handleClick = () => {
     if (href.startsWith("tel:")) {
       window.location.href = href;
-    } else {
-      window.open(href, "_blank");
     }
   };
 
