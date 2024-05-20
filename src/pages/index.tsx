@@ -1,8 +1,14 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Section from "@/components/Section";
 import DownloadButton from "@/components/DownloadButton";
 import Projects from "@/components/Projects";
 import Tech from "@/components/Tech";
 import Button from "@/components/Button";
+import MailTo from "@/components/MailTo";
 
 const Home: React.FC = () => {
   const projectsContent = (
@@ -90,6 +96,32 @@ const Home: React.FC = () => {
     </div>
   );
 
+  const contactMeContent = (
+    <div className="contact-me-content">
+      <Button href={"https://github.com/dianabasilio"} classType={"icon"}>
+        <FontAwesomeIcon icon={faGithub} className="fa-icon" />
+      </Button>
+      <Button
+        href={"https://www.linkedin.com/in/diana-karen-basilio"}
+        classType={"icon"}
+      >
+        <FontAwesomeIcon icon={faLinkedin} className="fa-icon" />
+      </Button>
+      <Button
+        href={"tel:+528180199305"}
+        classType={"icon"}
+        tooltip={"+52 8180199305"}
+      >
+        <FontAwesomeIcon icon={faPhone} className="fa-icon" />
+      </Button>
+      <Button classType={"icon"} tooltip={"dianabasilio99@gmail.com"}>
+        <MailTo email={"dianabasilio99@gmail.com"}>
+          <FontAwesomeIcon icon={faEnvelope} className="fa-icon" />
+        </MailTo>
+      </Button>
+    </div>
+  );
+
   const techStackContent = (
     <div className="tech-stack-container">
       <Tech img={"reactjs.png"} name="React js" />
@@ -132,7 +164,7 @@ const Home: React.FC = () => {
         {techStackContent}
       </Section>
       <Section id="Contact-me" title="Contact Me">
-        <p></p>
+        {contactMeContent}
       </Section>
     </main>
   );

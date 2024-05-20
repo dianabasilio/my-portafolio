@@ -9,6 +9,8 @@ interface ButtonProps {
   children: React.ReactNode;
   classType?: string;
   href?: string;
+  tooltip?: string;
+  customClass?: string; // Nueva prop para la segunda clase
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -17,14 +19,26 @@ const Button: React.FC<ButtonProps> = ({
   disabled = false,
   children,
   classType = "",
-  href,
+  href = "",
+  tooltip = "",
 }) => {
+  const handleClick = () => {
+    if (href.startsWith("tel:")) {
+      window.location.href = href;
+    } else {
+      window.open(href, "_blank");
+    }
+  };
+
+  const tooltipClass = tooltip ? "tooltip" : "";
+
   const buttonContent = (
     <button
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${styles.button} ${styles[classType]}`}
+      className={`${styles.button} ${styles[classType]} ${styles[tooltipClass]}`}
+      data-tooltip={tooltip}
     >
       {children}
     </button>
@@ -32,7 +46,7 @@ const Button: React.FC<ButtonProps> = ({
 
   if (href) {
     return (
-      <Link href={href} passHref>
+      <Link href={href} passHref onClick={handleClick}>
         {buttonContent}
       </Link>
     );
