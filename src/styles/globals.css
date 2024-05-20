@@ -96,7 +96,7 @@ button a {
 .projects {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: minmax(300px, auto);
   gap: 20px;
   justify-items: center;
@@ -118,24 +118,28 @@ button a {
 }
 
 .contact-me-content {
-  height: 200px;
-  width: 40%;
+  height: 50%;
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-  grid-auto-rows: minmax(80px, auto);
+  grid-auto-rows: minmax(40px, auto);
   gap: 20px;
   justify-items: center;
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
   .projects {
     flex-direction: row;
     justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: minmax(450px, auto);
   }
 
   .about-me {
     flex-direction: row;
+  }
+  .contact-me-content {
+    height: 100px;
   }
 }
