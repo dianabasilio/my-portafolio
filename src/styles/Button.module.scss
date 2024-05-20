@@ -1,0 +1,36 @@
+.button {
+  width: 100%;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s ease;
+
+  &:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.primary {
+  background-color: #3a86ff;
+  &:hover {
+    background-color: #2962bd;
+  }
+}
+
+.secondary {
+  background-color: black;
+  &:hover {
+    background-color: rgb(35, 35, 35);
+  }
+}

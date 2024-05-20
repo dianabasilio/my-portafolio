@@ -3,7 +3,7 @@ import styles from "@/styles/Projects.module.scss";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-
+import Button from "@/components/Button";
 interface Technology {
   icon: string;
   name: string;
@@ -43,13 +43,17 @@ const Projects: React.FC<ProjectsProps> = ({
         ))}
       </div>
       <div className={styles["view"]}>
-        <Link href={githubUrl} className={styles.secondary}>
-          <FontAwesomeIcon icon={faGithub} />
-        </Link>
+        <div className={styles["button"]}>
+          <Button href={githubUrl} classType={"secondary"}>
+            <FontAwesomeIcon icon={faGithub} />
+          </Button>
+        </div>
         {projectUrl && (
-          <Link href={projectUrl} className={styles.primary}>
-            View Live
-          </Link>
+          <div className={styles["button"]}>
+            <Button href={projectUrl} classType={"primary"}>
+              View Live
+            </Button>
+          </div>
         )}
       </div>
 

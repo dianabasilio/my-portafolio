@@ -2,6 +2,7 @@ import Section from "@/components/Section";
 import DownloadButton from "@/components/DownloadButton";
 import Projects from "@/components/Projects";
 import Tech from "@/components/Tech";
+import Button from "@/components/Button";
 
 const Home: React.FC = () => {
   const projectsContent = (
@@ -131,7 +132,7 @@ const Home: React.FC = () => {
         {techStackContent}
       </Section>
       <Section id="Contact-me" title="Contact Me">
-        <p>Contenido de contacto...</p>
+        <p></p>
       </Section>
     </main>
   );
