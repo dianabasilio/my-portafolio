@@ -93,6 +93,26 @@ const Home: React.FC = () => {
           },
         ]}
       />
+      <Projects
+        img={"/portafolio.jpeg"}
+        title={"Portafolio Next js App"}
+        projectUrl={"https://portafolio-app-d3ebfe7c4789.herokuapp.com"}
+        githubUrl={"https://github.com/dianabasilio/my-portafolio"}
+        technologies={[
+          {
+            icon: "nextjs.png",
+            name: "Next js",
+          },
+          {
+            icon: "typescript.png",
+            name: "Typescript",
+          },
+          {
+            icon: "reactjs.png",
+            name: "React js",
+          },
+        ]}
+      />
     </div>
   );
 
