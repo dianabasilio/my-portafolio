@@ -119,7 +119,7 @@ button a {
 
 .contact-me-content {
   height: 50%;
-  width: 80%;
+  width: 60%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   grid-auto-rows: minmax(40px, auto);
