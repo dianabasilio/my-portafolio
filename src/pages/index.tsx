@@ -161,6 +161,7 @@ const Home: React.FC = () => {
       <Tech img={"gcp.png"} name="Google Cloud Plataform" />
       <Tech img={"ruby.png"} name="Ruby on Rails" />
       <Tech img={"php.png"} name="PHP" />
+      <Tech img={"postman.png"} name="Postman" />
     </div>
   );
 
