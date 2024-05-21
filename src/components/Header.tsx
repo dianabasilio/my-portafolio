@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "@/styles/Header.module.scss";
 
 const Header: React.FC = () => {
-  const [activeSection, setActiveSection] = useState<string>("");
+  const [activeSection, setActiveSection] = useState<string>("About-me");
 
   useEffect(() => {
     const handleScroll = () => {
