@@ -153,7 +153,8 @@ const Home: React.FC = () => {
       <Tech img={"python.png"} name="Python" />
       <Tech img={"mysql.png"} name="MySql" />
       <Tech img={"css.png"} name="CSS" />
-      <Tech img={"aws.png"} name="Amazon Web Services" />
+      <Tech img={"aws.png"} name="AWS" />
+      <Tech img={"docker.png"} name="Docker" />
       <Tech img={"postgresql.png"} name="Postgresql" />
       <Tech img={"redux.svg"} name="Redux" />
       <Tech img={"react-testing.png"} name="React Testing Library" />
