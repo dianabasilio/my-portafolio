@@ -40,10 +40,9 @@
 }
 .subtitle {
   font-family: "Open Sans", sans-serif;
-  margin-top: 5px;
 }
 .title {
-  margin-top: 10px;
+  margin: 5px 0;
 }
 
 .ul {
@@ -60,5 +59,19 @@
     list-style-position: inside;
     text-indent: -20px;
     padding-left: 20px;
+  }
+}
+
+.rounded-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  .rounded-items {
+    width: fit-content;
+    border: 2px solid rgb(176, 176, 176);
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 13px;
+    margin-right: 4px;
+    margin-bottom: 7px;
   }
 }

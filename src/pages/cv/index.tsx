@@ -168,6 +168,7 @@ const Index: React.FC = () => {
               items={["20 hours, from Zero to Hero"]}
               side2={true}
             />
+            <div className={styles["dashed-line"]}></div>
             <CvSection
               subtitle="Certified LabVIEW Associate Developer"
               when="Jan 2018 - May 2018"
@@ -181,6 +182,64 @@ const Index: React.FC = () => {
               when="Sep 2017 - Dec 2021"
               place="Universidad Valle de México"
               items={["20 hours, from Zero to Hero"]}
+              side2={true}
+            />
+            <CvSection
+              title="TECH STACK"
+              roundedItems={[
+                "Javascript",
+                "TypeScript",
+                "Python",
+                "ReactJs",
+                "NodeJs",
+                "ExpressJs",
+                "Laravel",
+                "Ruby on Rails",
+                "git",
+                "Docker",
+                "AWS",
+                "GCP",
+                "Redux",
+                "Relay",
+                "GraphQL",
+                "Webpack",
+              ]}
+            />
+            <CvSection
+              title="Languages"
+              items={["Spanish-Native", "English-C1", "French-A2"]}
+              side2={true}
+            />
+            <CvSection
+              title="Manage of"
+              roundedItems={[
+                "Visual Studio Code",
+                "Mac OS",
+                "Windows",
+                "LINUX",
+                "Microsoft Office",
+                "Raspberry Pi",
+                "Github",
+                "Gitlab",
+                "Jira",
+                "Bitbucket",
+                "Agile development",
+              ]}
+              side2={true}
+            />
+            <CvSection
+              title="Values"
+              roundedItems={[
+                "Respect",
+                "Commitment",
+                "Adaptability",
+                "Responsibility",
+                "Communication",
+                "Collaboration",
+                "Aim for extraordinary",
+                "Empathy",
+                "Teamwork",
+              ]}
               side2={true}
             />
           </div>
