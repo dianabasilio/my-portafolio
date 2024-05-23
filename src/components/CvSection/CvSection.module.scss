@@ -1,0 +1,64 @@
+.container {
+  padding: 0;
+}
+.when-place {
+  div {
+    color: grey;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    p {
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+}
+.when-place-s1 {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.when-place-s2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  .place-s2 {
+    font-size: small;
+    font-weight: bold;
+    color: #4b0082;
+  }
+}
+.fa-icon-when-place {
+  color: grey;
+  width: 10px;
+}
+.title {
+  font-weight: bold;
+  color: #4b0082;
+  text-decoration: underline;
+}
+.subtitle {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 5px;
+}
+.title {
+  margin-top: 10px;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+  li {
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    list-style-position: inside;
+    text-indent: -20px;
+    padding-left: 20px;
+  }
+}
