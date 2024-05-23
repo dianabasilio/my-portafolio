@@ -176,7 +176,7 @@ const Index: React.FC = () => {
               side2={true}
             />
             <CvSection
-              title="Education"
+              title="EDUCATION"
               subtitle="Mechatronics Engineering Degree"
               when="Sep 2017 - Dec 2021"
               place="Universidad Del Valle De Mexico"
@@ -205,16 +205,16 @@ const Index: React.FC = () => {
                 "GraphQL",
                 "Webpack",
                 "Jest",
-                "React tTesting Library",
+                "React Testing Library",
               ]}
             />
             <CvSection
-              title="Languages"
+              title="LANGUAGES"
               items={["Spanish-Native", "English-C1", "French-A2"]}
               side2={true}
             />
             <CvSection
-              title="Manage of"
+              title="MANAGE OF"
               roundedItems={[
                 "Visual Studio Code",
                 "Mac OS",
@@ -225,13 +225,14 @@ const Index: React.FC = () => {
                 "Github",
                 "Gitlab",
                 "Jira",
+                "Figma",
                 "Bitbucket",
                 "Agile development",
               ]}
               side2={true}
             />
             <CvSection
-              title="Values"
+              title="VALUES"
               roundedItems={[
                 "Respect",
                 "Commitment",
