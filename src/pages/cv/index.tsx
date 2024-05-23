@@ -190,6 +190,7 @@ const Index: React.FC = () => {
                 "Python",
                 "ReactJs",
                 "NodeJs",
+                "CSS/HTML",
                 "ExpressJs",
                 "NextJs",
                 "Remix",
