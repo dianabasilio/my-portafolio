@@ -193,16 +193,20 @@ const Index: React.FC = () => {
                 "ReactJs",
                 "NodeJs",
                 "ExpressJs",
+                "NextJs",
+                "Remix",
+                "AWS",
                 "Laravel",
                 "Ruby on Rails",
                 "git",
                 "Docker",
-                "AWS",
                 "GCP",
                 "Redux",
                 "Relay",
                 "GraphQL",
                 "Webpack",
+                "Jest",
+                "React tTesting Library",
               ]}
             />
             <CvSection
