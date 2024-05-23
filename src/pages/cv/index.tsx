@@ -179,7 +179,7 @@ const Index: React.FC = () => {
               title="Education"
               subtitle="Mechatronics Engineering Degree"
               when="Sep 2017 - Dec 2021"
-              place="Universidad Valle de México"
+              place="Universidad Valle de Mexico"
               side2={true}
             />
             <CvSection
