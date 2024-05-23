@@ -173,7 +173,6 @@ const Index: React.FC = () => {
               subtitle="Certified LabVIEW Associate Developer"
               when="Jan 2018 - May 2018"
               place="National Instruments, ITESM"
-              items={["20 hours, from Zero to Hero"]}
               side2={true}
             />
             <CvSection
@@ -181,7 +180,6 @@ const Index: React.FC = () => {
               subtitle="Mechatronics Engineering Degree"
               when="Sep 2017 - Dec 2021"
               place="Universidad Valle de México"
-              items={["20 hours, from Zero to Hero"]}
               side2={true}
             />
             <CvSection
