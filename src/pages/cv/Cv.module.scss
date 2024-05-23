@@ -1,0 +1,52 @@
+.container {
+  background-color: white;
+  font-family: "Roboto";
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+    }
+    .position {
+      font-weight: bold;
+      color: #4b0082;
+    }
+  }
+}
+
+.sides {
+  display: flex;
+  width: 100%;
+  .side1 {
+    width: 65%;
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-bottom: 8px;
+
+      div {
+        min-width: 200px;
+        padding: 0;
+        margin-right: 15px;
+        height: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
+    }
+  }
+
+  .side2 {
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 30%;
+  }
+}
+
+.dashed-line {
+  border-bottom: 1px dashed rgb(176, 176, 176);
+  margin: 3px 0;
+}

@@ -78,3 +78,26 @@
 .tooltip:hover::after {
   opacity: 1;
 }
+
+.icon-no-border {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #4b0082;
+  flex-wrap: wrap;
+  p {
+    margin-left: 8px;
+    color: black;
+    font-size: 11px;
+  }
+}
+
+.fa-icon {
+  width: fit-content;
+  color: #4b0082;
+  margin: 0px;
+  padding: 0px;
+}
