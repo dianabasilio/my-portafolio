@@ -60,10 +60,10 @@ const experience = (
         "Developed from 0 an online store platform (e-commerce) for employees with React js, Typescript, Javascript, Loopback, PostgreSQL.",
         "Covered 90% of the scenarios with testing in Jest and React testing library.",
         "Dockerized and integrate ci/cd to deploy the backend and frontend to amazon web services.",
-        "Implemented Openpay to make secure payments within the platform.",
-        "Worked in an agile environment with Jira and daylies.",
+        "Implemented Openpay for payments and authentication and authorization solutions to make the plataform more secure.",
+        "Worked in an agile environment with Jira and daylies, github pull requests following best practices in writing reliable and maintainable code.",
         "Constant communication with designers using Figma and stakeholders to solve doubts.",
-        "Google Cloud Plataform introduction and Develop other plataforms using Next js, Python etc.",
+        "Google Cloud Plataform introduction and Develop other end-user facing plataforms using Next js, Python etc.",
       ]}
     />
     <div className={styles["dashed-line"]}></div>
@@ -136,13 +136,6 @@ const courses = (
         "Learn what Docker and Kubernetes are and why you might want to use them.Learn about Container Networking with Docker Networks and DNS Service Discovery.Understand complex topics like managing and persisting data with Volumes",
       ]}
     />
-    <div className={styles["dashed-line"]}></div>
-    <CvSection
-      subtitle="Automation and Control-Diplomat"
-      when="Mar 2019 - Sep 2019"
-      place="FIME, mty, N.L."
-      items={["90 hours, PLC programming"]}
-    />
   </div>
 );
 
@@ -163,16 +156,21 @@ const Index: React.FC = () => {
           <div className={styles.side2}>
             <CvSection
               subtitle="Python Course"
-              when="Jun 2020"
+              when="Jun 2020 - Aug 2020"
               place="UDEMY, Remote"
-              items={["20 hours, from Zero to Hero"]}
               side2={true}
             />
-            <div className={styles["dashed-line"]}></div>
             <CvSection
               subtitle="Certified LabVIEW Associate Developer"
               when="Jan 2018 - May 2018"
               place="National Instruments, ITESM"
+              side2={true}
+            />
+            <CvSection
+              subtitle="Automation and Control-Diplomat"
+              when="Mar 2019 - Sep 2019"
+              place="FIME, mty, N.L."
+              items={["90 hours, PLC programming"]}
               side2={true}
             />
             <CvSection
@@ -195,16 +193,16 @@ const Index: React.FC = () => {
                 "NextJs",
                 "Remix",
                 "AWS",
-                "Laravel",
-                "Ruby on Rails",
+                "GCP",
                 "git",
                 "Docker",
-                "GCP",
+                "PHP",
                 "Redux",
                 "Relay",
                 "GraphQL",
                 "Webpack",
                 "Jest",
+                "Ruby on Rails",
                 "React Testing Library",
               ]}
             />
@@ -217,16 +215,17 @@ const Index: React.FC = () => {
               title="MANAGE OF"
               roundedItems={[
                 "Visual Studio Code",
+                "Microsoft Office",
                 "Mac OS",
                 "Windows",
                 "LINUX",
-                "Microsoft Office",
-                "Raspberry Pi",
+                "Auth0",
                 "Github",
                 "Gitlab",
                 "Jira",
                 "Figma",
                 "Bitbucket",
+                "Raspberry Pi",
                 "Agile development",
               ]}
               side2={true}
@@ -234,7 +233,6 @@ const Index: React.FC = () => {
             <CvSection
               title="VALUES"
               roundedItems={[
-                "Respect",
                 "Commitment",
                 "Adaptability",
                 "Responsibility",
