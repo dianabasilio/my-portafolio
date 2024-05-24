@@ -60,7 +60,7 @@ const experience = (
         "Developed from 0 an online store platform (e-commerce) for employees with React js, Typescript, Javascript, Loopback, PostgreSQL.",
         "Covered 90% of the scenarios with testing in Jest and React testing library.",
         "Dockerized and integrate ci/cd to deploy the backend and frontend to amazon web services.",
-        "Implemented Openpay for payments and authentication and authorization solutions to make the plataform more secure.",
+        "Implemented Openpay for payments and Auth0 for authentication and authorization solutions to make the plataform more secure.",
         "Worked in an agile environment with Jira and daylies, github pull requests following best practices in writing reliable and maintainable code.",
         "Constant communication with designers using Figma and stakeholders to solve doubts.",
         "Google Cloud Plataform introduction and Develop other end-user facing plataforms using Next js, Python etc.",
