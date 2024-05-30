@@ -3,48 +3,64 @@ import Layout from "@/components/Layout/Layout";
 import Button from "@/components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPhone,
+  faEnvelope,
+  faBriefcase,
+} from "@fortawesome/free-solid-svg-icons";
 import styles from "./Cv.module.scss";
 import CvSection from "@/components/CvSection/CvSection";
 
 const contact = (
-  <div className={styles.contact}>
-    <div>
-      <Button
-        href={"https://www.linkedin.com/in/diana-karen-basilio"}
-        classType={"icon-no-border"}
-      >
-        <FontAwesomeIcon icon={faEnvelope} />
-        <p>dianabasilio99@gmail.com</p>
-      </Button>
+  <div className={styles["contact-container"]}>
+    <div className={styles.contact}>
+      <div>
+        <Button
+          href={"https://www.linkedin.com/in/diana-karen-basilio"}
+          classType={"icon-no-border"}
+        >
+          <FontAwesomeIcon icon={faEnvelope} />
+          <p>dianabasilio99@gmail.com</p>
+        </Button>
+      </div>
+      <div>
+        <Button
+          href={"https://www.linkedin.com/in/diana-karen-basilio"}
+          classType={"icon-no-border"}
+        >
+          <FontAwesomeIcon icon={faPhone} />
+          <p>+52 8180199305</p>
+        </Button>
+      </div>
+      <div>
+        <Button
+          href={"https://github.com/dianabasilio"}
+          classType={"icon-no-border"}
+        >
+          <FontAwesomeIcon icon={faGithub} />
+          <p>https://github.com/dianabasilio</p>
+        </Button>
+      </div>
     </div>
-    <div>
-      <Button
-        href={"https://www.linkedin.com/in/diana-karen-basilio"}
-        classType={"icon-no-border"}
-      >
-        <FontAwesomeIcon icon={faPhone} />
-        <p>+52 8180199305</p>
-      </Button>
-    </div>
-    <div>
-      <Button
-        href={"https://www.linkedin.com/in/diana-karen-basilio"}
-        classType={"icon-no-border"}
-      >
-        <FontAwesomeIcon icon={faLinkedin} />
-        <p>https://www.linkedin.com/in/diana-karen-basilio</p>
-      </Button>
-    </div>
-    <div>
-      <Button
-        href={"https://github.com/dianabasilio"}
-        classType={"icon-no-border"}
-      >
-        <FontAwesomeIcon icon={faGithub} />
-        <p>https://github.com/dianabasilio</p>
-      </Button>
+    <div className={styles.contact}>
+      <div>
+        <Button
+          href={"https://portafolio-app-d3ebfe7c4789.herokuapp.com"}
+          classType={"icon-no-border"}
+        >
+          <FontAwesomeIcon icon={faBriefcase} />
+          <p>https://portafolio-app-d3ebfe7c4789.herokuapp.com</p>
+        </Button>
+      </div>
+      <div>
+        <Button
+          href={"https://www.linkedin.com/in/diana-karen-basilio"}
+          classType={"icon-no-border"}
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+          <p>https://www.linkedin.com/in/diana-karen-basilio</p>
+        </Button>
+      </div>
     </div>
   </div>
 );
@@ -146,10 +162,10 @@ const Index: React.FC = () => {
         <div className={styles.profile}>
           <h2>DIANA BASILIO</h2>
           <div className={styles.position}>Software Developer</div>
+          {contact}
         </div>
         <div className={styles.sides}>
           <div className={styles.side1}>
-            {contact}
             {experience}
             {courses}
           </div>

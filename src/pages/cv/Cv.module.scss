@@ -13,22 +13,17 @@
       font-weight: bold;
       color: #4b0082;
     }
-  }
-}
-
-.sides {
-  display: flex;
-  width: 100%;
-  .side1 {
-    width: 64%;
+    .contact-container {
+      width: 100%;
+    }
     .contact {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      margin-bottom: 8px;
+      width: 100%;
 
       div {
-        min-width: 200px;
+        width: fit-content;
         padding: 0;
         margin-right: 15px;
         height: 15px;
@@ -38,9 +33,17 @@
       }
     }
   }
+}
+
+.sides {
+  display: flex;
+  width: 100%;
+  .side1 {
+    width: 64%;
+  }
 
   .side2 {
-    margin-top: 60px;
+    margin-top: 5px;
     margin-left: 20px;
     width: 29%;
   }
