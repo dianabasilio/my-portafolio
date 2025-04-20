@@ -14,6 +14,26 @@ const Home: React.FC = () => {
   const projectsContent = (
     <div className="projects">
       <Projects
+        img={"/NextFood.jpeg"}
+        title={"NextLevel Food App"}
+        projectUrl={"https://nextlevelfood-zoa4.onrender.com"}
+        githubUrl={"https://github.com/dianabasilio/NextLevelFood"}
+        technologies={[
+          {
+            icon: "nextjs.png",
+            name: "Next js",
+          },
+          {
+            icon: "typescript.png",
+            name: "Typescript",
+          },
+          {
+            icon: "reactjs.png",
+            name: "React js",
+          },
+        ]}
+      />
+      <Projects
         img={"/remix-app.jpeg"}
         title={"Remix Contacts App"}
         projectUrl={"https://salty-lowlands-25269-53ed27647c88.herokuapp.com"}

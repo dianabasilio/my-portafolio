@@ -79,7 +79,7 @@ const experience = (
         "Implemented Openpay for payments and Auth0 for authentication and authorization solutions to make the plataform more secure.",
         "Worked in an agile environment with Jira and daylies, github pull requests following best practices in writing reliable and maintainable code.",
         "Constant communication with designers using Figma and stakeholders to solve doubts.",
-        "Google Cloud Plataform, document AI and Develop other end-user facing plataforms using Next js, Python etc.",
+        "Developed AI-powered solutions leveraging Google Cloud Platform, Document AI, and semantic search with embeddings. Develop other end-user facing plataforms using Next js, Python etc.",
       ]}
     />
     <div className={styles["dashed-line"]}></div>
@@ -239,6 +239,7 @@ const Index: React.FC = () => {
                 "Github",
                 "Gitlab",
                 "Jira",
+                "Cursor/Copilot/AI",
                 "Figma",
                 "Bitbucket",
                 "Raspberry Pi",
