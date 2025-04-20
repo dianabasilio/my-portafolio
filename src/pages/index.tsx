@@ -34,9 +34,25 @@ const Home: React.FC = () => {
         ]}
       />
       <Projects
+        img={"/NasaPosts.jpeg"}
+        title={"NASA Notes App"}
+        projectUrl={"https://nasa-notes.onrender.com"}
+        githubUrl={"https://github.com/dianabasilio/NASA-notes"}
+        technologies={[
+          {
+            icon: "js.png",
+            name: "Javascript",
+          },
+          {
+            icon: "reactjs.png",
+            name: "React js",
+          },
+        ]}
+      />
+      <Projects
         img={"/remix-app.jpeg"}
         title={"Remix Contacts App"}
-        projectUrl={"https://salty-lowlands-25269-53ed27647c88.herokuapp.com"}
+        projectUrl={"https://remix-contacts-app.onrender.com"}
         githubUrl={"https://github.com/dianabasilio/remix"}
         technologies={[
           {
@@ -50,10 +66,6 @@ const Home: React.FC = () => {
           {
             icon: "reactjs.png",
             name: "React js",
-          },
-          {
-            icon: "js.png",
-            name: "JavaScript",
           },
         ]}
       />
