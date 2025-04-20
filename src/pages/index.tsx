@@ -116,7 +116,7 @@ const Home: React.FC = () => {
       <Projects
         img={"/portafolio.jpeg"}
         title={"Portafolio Next js App"}
-        projectUrl={"https://portafolio-app-d3ebfe7c4789.herokuapp.com"}
+        projectUrl={"https://my-portafolio-rlnf.onrender.com"}
         githubUrl={"https://github.com/dianabasilio/my-portafolio"}
         technologies={[
           {

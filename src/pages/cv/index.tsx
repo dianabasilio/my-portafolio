@@ -45,11 +45,11 @@ const contact = (
     <div className={styles.contact}>
       <div>
         <Button
-          href={"https://portafolio-app-d3ebfe7c4789.herokuapp.com"}
+          href={"https://my-portafolio-rlnf.onrender.com"}
           classType={"icon-no-border"}
         >
           <FontAwesomeIcon icon={faBriefcase} />
-          <p>https://portafolio-app-d3ebfe7c4789.herokuapp.com</p>
+          <p>https://my-portafolio-rlnf.onrender.com</p>
         </Button>
       </div>
       <div>
