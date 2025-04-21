@@ -79,7 +79,7 @@ const experience = (
         "Implemented Openpay for payments and Auth0 for authentication and authorization solutions to make the plataform more secure.",
         "Worked in an agile environment with Jira and daylies, github pull requests following best practices in writing reliable and maintainable code.",
         "Constant communication with designers using Figma and stakeholders to solve doubts.",
-        "Developed AI-powered solutions leveraging Google Cloud Platform, Document AI, and semantic search with embeddings. Develop other end-user facing plataforms using Next js, Python etc.",
+        "Designed and implemented AI-driven solutions, including an image recognition and analysis system that generates JSON data for intelligent matching with Deacero's article database via semantic search (embedding-based). Contributed to the development of user platforms using Next.js and Python.",
       ]}
     />
     <div className={styles["dashed-line"]}></div>
@@ -171,6 +171,13 @@ const Index: React.FC = () => {
           </div>
           <div className={styles.side2}>
             <CvSection
+              subtitle="Next Js 15 & React"
+              when="Mar 2025 - Apr 2025"
+              place="UDEMY, Remote"
+              items={["40.5 hours"]}
+              side2={true}
+            />
+            <CvSection
               subtitle="Python Course"
               when="Jun 2020 - Aug 2020"
               place="UDEMY, Remote"
@@ -258,7 +265,7 @@ const Index: React.FC = () => {
                 "Aim for extraordinary",
                 "Empathy",
                 "Teamwork",
-                "Improvement and innovation",
+                "Improvement",
               ]}
               side2={true}
             />

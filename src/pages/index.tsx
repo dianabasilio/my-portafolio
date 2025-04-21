@@ -72,7 +72,7 @@ const Home: React.FC = () => {
       <Projects
         img={"/samandro.jpeg"}
         title={"Itinerary Next js App"}
-        projectUrl={"https://itinerary-app-9886f0dc26be.herokuapp.com"}
+        projectUrl={"https://sam-villareal-itinerary.onrender.com"}
         githubUrl={"https://github.com/dianabasilio/sam-villareal-itinerary"}
         technologies={[
           {
