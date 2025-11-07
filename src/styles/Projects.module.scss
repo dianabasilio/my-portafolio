@@ -46,10 +46,37 @@
 .view {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .button {
-  width: 40%;
+  flex: 1;
+  min-width: 0;
+}
+
+.private-message {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+  font-size: 0.85rem;
+  padding: 8px 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+
+  svg {
+    opacity: 0.6;
+    flex-shrink: 0;
+  }
+
+  span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 @media (min-width: 768px) {

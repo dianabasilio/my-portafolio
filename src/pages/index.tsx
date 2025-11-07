@@ -1,8 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Section from "@/components/Section";
 import DownloadButton from "@/components/DownloadButton";
 import Projects from "@/components/Projects";
@@ -17,7 +15,7 @@ const Home: React.FC = () => {
         img={"/altered.jpeg"}
         title={"Tailors Next js App"}
         projectUrl={"https://get-altered.com"}
-        githubUrl={"https://github.com"}
+        isPrivate={true}
         technologies={[
           {
             icon: "nextjs.png",
@@ -40,7 +38,7 @@ const Home: React.FC = () => {
       <Projects
         img={"/NextFood.jpeg"}
         title={"NextLevel Food App"}
-        projectUrl={"https://nextlevelfood-zoa4.onrender.com"}
+        projectUrl={"https://nextlevel-food-nextjs.vercel.app"}
         githubUrl={"https://github.com/dianabasilio/NextLevelFood"}
         technologies={[
           {
@@ -60,7 +58,7 @@ const Home: React.FC = () => {
       <Projects
         img={"/NasaPosts.jpeg"}
         title={"NASA Notes App"}
-        projectUrl={"https://nasa-notes.onrender.com"}
+        projectUrl={"https://react-refresher-topaz.vercel.app"}
         githubUrl={"https://github.com/dianabasilio/NASA-notes"}
         technologies={[
           {
@@ -76,7 +74,7 @@ const Home: React.FC = () => {
       <Projects
         img={"/remix-app.jpeg"}
         title={"Remix Contacts App"}
-        projectUrl={"https://remix-contacts-app.onrender.com"}
+        projectUrl={"https://remix-five-peach.vercel.app"}
         githubUrl={"https://github.com/dianabasilio/remix"}
         technologies={[
           {
@@ -96,7 +94,7 @@ const Home: React.FC = () => {
       <Projects
         img={"/samandro.jpeg"}
         title={"Itinerary Next js App"}
-        projectUrl={"https://sam-villareal-itinerary.onrender.com"}
+        projectUrl={"https://sam-villareal-itinerary.vercel.app"}
         githubUrl={"https://github.com/dianabasilio/sam-villareal-itinerary"}
         technologies={[
           {

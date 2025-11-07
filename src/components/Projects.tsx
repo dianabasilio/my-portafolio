@@ -12,8 +12,9 @@ interface ProjectsProps {
   img: string;
   title: string;
   technologies: Technology[];
-  githubUrl: string;
+  githubUrl?: string;
   projectUrl?: string;
+  isPrivate?: boolean;
   children?: React.ReactNode;
 }
 
@@ -23,6 +24,7 @@ const Projects: React.FC<ProjectsProps> = ({
   technologies,
   projectUrl,
   githubUrl,
+  isPrivate,
   children,
 }) => {
   return (
@@ -42,11 +44,20 @@ const Projects: React.FC<ProjectsProps> = ({
         ))}
       </div>
       <div className={styles["view"]}>
-        <div className={styles["button"]}>
-          <Button href={githubUrl} classType={"secondary"}>
+        {isPrivate ? (
+          <div className={styles["private-message"]}>
             <FontAwesomeIcon icon={faGithub} />
-          </Button>
-        </div>
+            <span>Repositorio privado</span>
+          </div>
+        ) : (
+          githubUrl && (
+            <div className={styles["button"]}>
+              <Button href={githubUrl} classType={"secondary"}>
+                <FontAwesomeIcon icon={faGithub} />
+              </Button>
+            </div>
+          )
+        )}
         {projectUrl && (
           <div className={styles["button"]}>
             <Button href={projectUrl} classType={"primary"}>
