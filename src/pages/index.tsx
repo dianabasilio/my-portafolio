@@ -14,6 +14,30 @@ const Home: React.FC = () => {
   const projectsContent = (
     <div className="projects">
       <Projects
+        img={"/altered.jpeg"}
+        title={"Tailors Next js App"}
+        projectUrl={"https://get-altered.com"}
+        githubUrl={"https://github.com"}
+        technologies={[
+          {
+            icon: "nextjs.png",
+            name: "Next js",
+          },
+          {
+            icon: "typescript.png",
+            name: "Typescript",
+          },
+          {
+            icon: "reactjs.png",
+            name: "React js",
+          },
+          {
+            icon: "tailwind.png",
+            name: "Tailwind",
+          },
+        ]}
+      />
+      <Projects
         img={"/NextFood.jpeg"}
         title={"NextLevel Food App"}
         projectUrl={"https://nextlevelfood-zoa4.onrender.com"}
@@ -194,6 +218,7 @@ const Home: React.FC = () => {
       <Tech img={"ruby.png"} name="Ruby on Rails" />
       <Tech img={"php.png"} name="PHP" />
       <Tech img={"postman.png"} name="Postman" />
+      <Tech img={"tailwind.png"} name="Tailwind" />
     </div>
   );
 
