@@ -45,11 +45,11 @@ const contact = (
     <div className={styles.contact}>
       <div>
         <Button
-          href={"https://my-portafolio-rlnf.onrender.com"}
+          href={"https://my-portafolio-virid.vercel.app"}
           classType={"icon-no-border"}
         >
           <FontAwesomeIcon icon={faBriefcase} />
-          <p>https://my-portafolio-rlnf.onrender.com</p>
+          <p>https://my-portafolio-virid.vercel.app</p>
         </Button>
       </div>
       <div>
